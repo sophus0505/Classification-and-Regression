@@ -18,7 +18,7 @@ eta = 0.042625 : epochs = 100 : acc = 0.644
 The result is far from impressive. This is expected since (X, t2) is not linearly separable. The resulting decision boundaries are given in the figure below.
 
     
-![Decision boundaries for the linear classifier.](output_24_0.png)
+![Decision boundaries for the linear classifier.](figures/output_24_0.png)
     
 
 
@@ -26,7 +26,7 @@ The result is far from impressive. This is expected since (X, t2) is not linearl
 The linear regression classifier is trained with mean squared error loss. We modify the code so that the loss is saved after each epoch. The figure below shows the loss against the number of epochs. 
 
     
-![Loss of the linear classifier for different numbers of epochs](output_26_0.png)
+![Loss of the linear classifier for different numbers of epochs](figures/output_26_0.png)
     
 
 
@@ -38,7 +38,7 @@ In the figure below, we show the accuracy of the classifier on both the training
 This is about as good of a result we can hope for, since the dataset is not separable. 
 The loss decreases approximately as 1/epoch and we see that training with more epochs would give diminishing returns. 
 
-![Accuracy and loss of the linear classifier](output_28_0.png)
+![Accuracy and loss of the linear classifier](figures/output_28_0.png)
     
 
 
@@ -52,14 +52,14 @@ eta = 0.334 : epochs = 100 : acc = 0.672
 
 The results after running logistic regression on (X_train, t_train) is represented by the decision boundaries shown in the figure below.
     
-![Decision boundaries of the logistic regression classifier](output_34_0.png)
+![Decision boundaries of the logistic regression classifier](figures/output_34_0.png)
     
 
 
 Similarly as before, we plot accuracy and loss for both the training and validation data in two subplots.
 Wee see similar end results after 100 epochs to what we got with the linear classifier, but it stabilizes much quicker, and with a less regular pattern. 
     
-![Accuracy and loss of the logistic classifier](output_36_0.png)
+![Accuracy and loss of the logistic classifier](figures/output_36_0.png)
     
 
 
@@ -67,7 +67,7 @@ Wee see similar end results after 100 epochs to what we got with the linear clas
 We turn to the task of classifying when there are more than two classes, and the task is to ascribe one class to each input. We will now use the set (X, t) which is shown below. 
 
     
-![A representation of the dataset (X,t)](output_40_0.png)
+![A representation of the dataset (X,t)](figures/output_40_0.png)
     
 To implement the multi-class classifier we use the one-vs-rest approach on the logistic regression classifier.
 We run the model with the same parameters as the logistic regression classifier and get the following accuracy:
@@ -79,7 +79,7 @@ accuracy = 0.678
 
 The decision boundaries are shown in the figure below. 
 
-![Decision boundaries of the multi-class classifier using one-vs-rest](output_41_1.png)
+![Decision boundaries of the multi-class classifier using one-vs-rest](figures/output_41_1.png)
     
 
 # Part II: Multi-layer neural networks
@@ -102,7 +102,7 @@ Standard deviation after 10 runs: 0.0037, mean value after 10 runs: 0.7726
 
 And the decision boundary of one of the runs are shown below. 
 
-![Decision boundaries for the neural network on (X,t)](output_70_1.png)
+![Decision boundaries for the neural network on (X,t)](figures/output_70_1.png)
 
 We see that the decision boundaries of the classifier is more accurate than the ones produced using the one-vs-rest classifier. This might be because we are no longer limited to linear boundaries. 
 
@@ -122,7 +122,7 @@ Standard deviation after 10 runs: 0.0121, mean value after 10 runs: 0.7560
 
 The decision boundaries from one of the runs are given in the figure below.
 
-![Decision boundaris for the neural network on (X, t2)](output_73_1.png)
+![Decision boundaris for the neural network on (X, t2)](figures/output_73_1.png)
 
 
     
